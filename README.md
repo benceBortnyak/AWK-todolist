@@ -1,6 +1,6 @@
 # AWK-todolist
 
-ToDo AWK script
+Task:
 Create an awk script for handling a todo list. You shall define the structure of the todo list. The list needs to contain the task you want to accomplish and the date you want to finish.
 
 Features to implement:
