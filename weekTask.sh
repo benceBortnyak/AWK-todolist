@@ -9,7 +9,7 @@ do
     num=$(($num+1))
 done
 date=${date:0:${#date}-1}
-result=$(awk -v dates=$date -F ";" -f week.awk task.csv)
+result=$(awk -v dates=$date -v today=$(date '+%Y-%m-%d,') -F ";" -f week.awk task.csv)
 if [[ ! result ]];then
     echo "No tasks"
 else

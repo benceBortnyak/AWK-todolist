@@ -9,10 +9,11 @@ while true; do
         2. task deletion by order number
         3. list the today's task
         4. list the tasks for tomorrow
-        5. list the tasks for the week"
+        5. list the tasks for the week
+        0. exit"
+        
     read input
-    echo "option $input"
-
+    
     if [ $input == 1 ]; then
         clear
         ./addTask.sh
@@ -40,6 +41,9 @@ while true; do
     elif [ $input == 5 ]; then
         clear
         ./weekTask.sh
+    elif [ $input == 0 ]; then
+        exit 1 
+
     else
         echo 'No such an option'
     fi

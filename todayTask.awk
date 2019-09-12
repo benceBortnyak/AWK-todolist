@@ -1,6 +1,6 @@
 #!/usr/bin/awk -f
 BEGIN{
-    print "Tasks for today: ",date 
+    print "Tasks for today: ",date
     print"----------------------------"
 }{
     
